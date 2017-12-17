@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="eticket" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f6dd8b7f-b577-4a2d-8b1e-848c1ecef3f9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="498"/>
+	<subDataset name="dataset1" uuid="e08ee740-b02d-4fe0-b8ae-b91766c65c14"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="datee" class="java.lang.String"/>
+	<parameter name="services" class="java.lang.String"/>
+	<parameter name="dtime" class="java.lang.String"/>
+	<parameter name="noperson" class="java.lang.String"/>
+	<parameter name="bkno" class="java.lang.String"/>
+	<parameter name="voucher" class="java.lang.String"/>
+	<parameter name="cp" class="java.lang.String"/>
+	<parameter name="tp" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="168" y="0" width="184" height="87" uuid="2a0590cc-70ab-4237-8cfd-66f54d9c492c"/>
+				<imageExpression><![CDATA["C:\\Users\\Kelvin E Sajere\\Documents\\NetbeansProjects\\edbusiness\\src\\images\\logo.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="87" width="555" height="20" forecolor="#FF3300" backcolor="#FF6600" uuid="8f7939e5-58e0-40a5-bc71-89a51c2324d9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="361" y="25" width="60" height="20" uuid="05552a55-0bc3-48a3-b747-e03bb2fde3e7"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Voucher no :]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="8" y="303" width="259" height="244" backcolor="#FF6600" uuid="6529d18a-79ab-456b-8328-2d8c3293e24b"/>
+				<graphicElement>
+					<pen lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="0" y="289" width="554" height="1" forecolor="#FF6600" backcolor="#FF6600" uuid="92e75279-75da-479d-acfa-5395df0c5b90"/>
+			</line>
+			<rectangle radius="10">
+				<reportElement x="286" y="303" width="262" height="219" backcolor="#FF6600" uuid="07507d6b-5156-4083-808f-412f9ab9f3a8"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="8" y="347" width="259" height="243" uuid="bc721687-cc3e-46c2-ba24-6e57c2aa959f"/>
+				<graphicElement>
+					<pen lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="286" y="347" width="262" height="243" uuid="19637367-4338-4c74-ba67-a9913377f8f1"/>
+				<graphicElement>
+					<pen lineColor="#CCCCCC"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="8" y="624" width="537" height="1" uuid="21bd3c1e-44c8-4bbe-9879-30a75cb9ab5e"/>
+			</line>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="11" y="635" width="241" height="156" uuid="1c857ee9-4ef8-45bf-97b2-671877050f71"/>
+				<imageExpression><![CDATA["C:\\Users\\Kelvin E Sajere\\Documents\\NetbeansProjects\\edbusiness\\src\\images\\Customer-service-icon.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="307" y="635" width="241" height="30" forecolor="#996600" backcolor="#FF6600" uuid="b4ccd446-ccef-4521-860a-909cd46a72d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Adobe Garamond Pro" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[canopytour@jaguartikal.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="681" width="241" height="33" forecolor="#006600" uuid="2492713b-8d42-4de6-a196-6940302c4fe3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Impact" size="24" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[+502 7926 2411]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="730" width="239" height="61" forecolor="#0000CC" backcolor="#FFFFFF" uuid="b67f337d-9d2e-4d7c-bf76-7c33b4597b45"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Roman Antique" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[www.canopytourtikal.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="312" width="162" height="23" forecolor="#FFFFFF" uuid="1e71296a-30f0-43b0-9305-be62e289fbe0"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRAVEL TIPS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="315" width="235" height="20" forecolor="#FFFFFF" uuid="f84ae9d3-6bab-4083-956e-b8a02f27a041"/>
+				<textElement>
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CANCELLATION POLICIES]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="24" y="308" width="53" height="35" uuid="ac0d2287-1012-4d19-b4e0-338716792c02"/>
+				<imageExpression><![CDATA["C:\\Users\\Kelvin E Sajere\\Documents\\NetbeansProjects\\edbusiness\\src\\images\\Baggage-icon.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="0" y="112" width="555" height="166" forecolor="#CCCCCC" uuid="e384d5f1-befc-41ed-8252-bd1caf28aa57"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="11" y="123" width="537" height="144" backcolor="#CCCCCC" uuid="c7457cbc-023e-4f1c-a8bb-a0867f2f5db2"/>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="24" y="178" width="262" height="20" uuid="0ed47ccb-fafe-4def-bcd9-ad39abeb4073"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Services]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="138" width="262" height="20" uuid="98e0b671-1c2b-43f6-a948-124207a3b1d5"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="218" width="262" height="20" uuid="5830efc5-2968-4a51-8c12-d4bd135e2822"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[No. Persons]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="138" width="248" height="20" uuid="54fa01fb-2812-4587-acbb-2dada36845e1"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="178" width="188" height="20" uuid="54bf8f4e-de1e-448e-b75f-7720c0a94b1c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Departure Date & Time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="218" width="188" height="20" uuid="c9aa07b3-81e9-498c-820c-7480ef31b7f6"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Booking No]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Opaque" x="491" y="198" width="43" height="20" forecolor="#000000" uuid="52a1f84a-dc62-45a0-9b69-03ddd2c3c460"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dtime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="24" y="238" width="262" height="20" forecolor="#000000" uuid="9248505c-2b49-45b5-bee1-9e69810d49ec"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{noperson}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="286" y="238" width="248" height="20" forecolor="#000000" uuid="9c5ef6d4-527f-429e-8690-15a71e54f0cd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{bkno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="421" y="17" width="120" height="38" forecolor="#0000CC" uuid="eed10c91-a3aa-4b75-9687-c6ac98861e32"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{voucher}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="24" y="198" width="262" height="20" uuid="2502dcfb-3999-4a68-8c70-bb56c5368a1e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{services}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="24" y="158" width="262" height="20" uuid="6972954b-53a5-45ca-8795-eb80ef16529d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="286" y="198" width="205" height="20" uuid="da23a100-e9bb-4d85-9b14-7f344723890e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datee}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="11" y="9" width="135" height="70" uuid="63c24c2a-c1e1-4177-8aa8-518253fe1bb9"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$P{dtime}+$P{name}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<textField>
+				<reportElement x="299" y="358" width="242" height="222" uuid="2f240031-8e7b-449c-8abe-b83b5dd1f80f"/>
+				<textFieldExpression><![CDATA[$P{cp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="24" y="358" width="228" height="222" uuid="a4a451ac-d095-425a-8673-4cbd0ae65f60"/>
+				<textFieldExpression><![CDATA[$P{tp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement mode="Opaque" x="286" y="158" width="248" height="20" uuid="1a0e79df-b08a-44b5-9f42-4dd6cec7ab1f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
